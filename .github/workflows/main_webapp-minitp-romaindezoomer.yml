@@ -65,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7E8F71ADB53941FFA4737442E0E759A6 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_134F466E69B74910B29EA03CF90D77B1 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_735D82CF7597423394BB1C31F7DB5D88 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_01BB06735BFD4D95B91765092BECF3C6 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8293338F754B4B3FA72C9119151B1225 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5772AEB3D9BD4B849D407EA4AA809847 }}
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
@@ -75,3 +75,4 @@ jobs:
           app-name: 'webapp-minitp-ld'
           slot-name: 'Production'
           package: ./artifact
+
