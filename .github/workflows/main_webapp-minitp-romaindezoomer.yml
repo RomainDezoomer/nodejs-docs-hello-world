@@ -72,7 +72,8 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'webapp-minitp-ld'
+          app-name: 'webapp-minitp-romaindezoomer'
           slot-name: 'Production'
           package: ./artifact
+
 
